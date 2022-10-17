@@ -1,0 +1,195 @@
+h1 {
+    color: #fff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+span#h1_label {
+    color: #a2a2ad;
+}
+
+span.flow_categories_label {
+    color: #fff;
+}
+
+#flow_container {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100vw - 295px);
+    margin-bottom: 40px;
+    padding-left: 73px;
+}
+
+#flow_categories_container {
+    display: flex;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    overflow-x: auto;
+}
+
+#flow_categories_container::-webkit-scrollbar {
+    display: none;
+}
+
+.flow_categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flow_categories_bg {
+    min-width: 140px;
+    min-height: 140px;
+    border-radius: 50%;
+    background-color: #23232d;
+    cursor: pointer;
+}
+
+#flow_category {
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 75%, rgba(252,176,69,1) 100%);
+    cursor: pointer;
+}
+
+.flow_category_container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+i.flow_category_icon {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-size: 55px;
+}
+
+#flow_span,
+#flow_icon_treino,
+#flow_icon_festa,
+#flow_icon_relax,
+#flow_icon_na_bad,
+#flow_icon_voce_e_eu,
+#flow_icon_foco  {
+    display: block;
+}
+
+#flow_span {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 35px;
+    text-shadow: 2px 2px 5px #222;
+}
+
+#flow_icon_play_flow {
+    display: none;
+    font-size: 50px;
+    color: #fff;
+}
+
+#flow_bg_flow {
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right top, color-stop(.5, #D7540D), color-stop(1, #CE751E));
+    background: gradient(linear, left top, right top, color-stop(0.5, #D7540D), color-stop(1, #CE751E));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#flow_icon_play_treino {
+    display: none;
+    font-size: 50px;
+    filter: invert();
+}
+
+#flow_bg_treino {
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right top, color-stop(.5, #D7540D), color-stop(1, #CE751E));
+    background: gradient(linear, left top, right top, color-stop(0.5, #D7540D), color-stop(1, #CE751E));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#flow_icon_play_festa {
+    display: none;
+    font-size: 50px;
+    filter: invert();
+}
+
+#flow_bg_festa {
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #D6332B), color-stop(1, #EB5F36));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #D6332B), color-stop(1, #EB5F36));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#flow_icon_play_relax {
+    display: none;
+    font-size: 50px;
+    filter: invert();
+}
+
+#flow_bg_relax {
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #9F36AC), color-stop(1, #CB47B4));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #9F36AC), color-stop(1, #CB47B4));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#flow_icon_play_na_bad {
+    display: none;
+    font-size: 50px;
+    filter: invert();
+}
+
+#flow_bg_na_bad {
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #00837A), color-stop(1, #00837A));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #00837A), color-stop(1, #00837A));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#flow_icon_play_voce_e_eu {
+    display: none;
+    font-size: 50px;
+    filter: invert();
+}
+
+#flow_bg_voce_e_eu {
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #D32950), color-stop(1, #EC5A5E));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #D32950), color-stop(1, #EC5A5E));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#flow_icon_play_foco {
+    display: none;
+    font-size: 50px;
+    filter: invert();
+}
+
+#flow_bg_foco {
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #2E6FC9), color-stop(1, #1491C3));
+    background-image: -moz-gradient(linear, left top, right top, color-stop(.5, #2E6FC9), color-stop(1, #1491C3));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #2E6FC9), color-stop(1, #1491C3));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}

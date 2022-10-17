@@ -1,0 +1,99 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121216;
+}
+
+ul li {
+    list-style: none;
+}
+
+#content_container {
+    display: flex;
+    position: absolute;
+    height: calc(100vh - 136px);
+    width: calc(100vw - 220px);
+    padding-top: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: calc(100vw - 220px);
+    height: calc(100vh - 156px);
+    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#content_container::-webkit-scrollbar {
+    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#content::-webkit-scrollbar {
+    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#play {
+    font-size: 40px !important;
+}
+
+i {
+    z-index: 1000;
+}
+
+i.fa-hand-back-fist:before {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #D7540D), color-stop(1, #CE751E));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #D7540D), color-stop(1, #CE751E));
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 100%;
+}
+
+i.bi-stars:before {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #D6332B), color-stop(1, #EB5F36));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #D6332B), color-stop(1, #EB5F36));
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+i.fa-pagelines:before {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #9F36AC), color-stop(1, #CB47B4));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #9F36AC), color-stop(1, #CB47B4));
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+i.fa-face-sad-cry:before {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #00837A), color-stop(1, #00837A));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #00837A), color-stop(1, #00837A));
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+i.bi-arrow-through-heart:before {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #D32950), color-stop(1, #EC5A5E));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #D32950), color-stop(1, #EC5A5E));
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+i.bi-flower1:before {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #2E6FC9), color-stop(1, #1491C3));
+    background-image: gradient(linear, left top, right top, color-stop(0.5, #2E6FC9), color-stop(1, #1491C3));
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

@@ -1,0 +1,156 @@
+#bottom_bar {
+    display: flex;
+    background-color: #23232D;
+    height: 80px;
+    color: #fff;
+    border-top: 1px solid #32323d;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/* tooltips */
+#castTooltip {
+    display: none;
+    position: fixed;
+}
+
+
+
+.active {
+    color: #EF5466;
+}
+
+#controls {
+    display: block;
+    min-width: 160px;
+    padding-left: 20px;
+}
+
+#song_name_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#song_name {
+    padding-left: 58px;
+}
+
+.song_time {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-size: 10px;
+    color: #a2a2ad;
+}
+
+#song_time {
+    width: 50vw;
+}
+
+#controls i{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 35px;
+    border-radius: 50%;
+}
+
+i.hover:hover {
+    cursor: pointer;
+    background-color: #42424C;
+    transition: .2s;
+}
+
+#song_time {
+    display: flex;
+    flex: 1;
+}
+
+#song_controls {
+    padding-right: 55px;
+}
+
+#song_controls i {
+    margin: 0;
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+}
+
+#other_controls_queue_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#other_controls {
+    width: 170px;
+}
+
+#other_controls i{
+    margin-left: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    font-size: 15px;
+    border-radius: 50%;
+}
+
+#queue_container {
+    display: flex;
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+#queue_container:hover {
+    cursor: pointer;
+    background-color: #42424C;
+}
+
+#queue_album_cover {
+    width: auto;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#queue_text {
+    font-size: 12px;
+}
+
+@media (max-width: 1099px) {
+    #song_time {
+        width: 40vw;
+    }
+
+    #song_name {
+        padding-left: 15px;
+    }
+
+    #song_controls {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 881px) {
+    #song_time {
+        width: 30vw;
+    }    
+}
+
+@media (max-width: 772px) {
+    /* MOBILE */
+    #bottom_bar {
+        display: none;
+    }
+}

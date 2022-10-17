@@ -1,0 +1,116 @@
+a.mix_links {
+    text-decoration: none;
+}
+
+a.mix_links:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+h1#h1_mixes {
+    padding-left: 73px;
+}
+
+span#h1_label {
+    color: #a2a2ad;
+    padding-left: 73px;
+}
+
+table#mixes_table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#mixes_table td {
+    margin: 0;
+    padding-bottom: 7px;
+    padding-right: 30px;
+    height: 56px;
+}
+
+#mixes_panel_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 73px;
+    margin-right: 78px;
+    max-width: calc(100vw - 295px);
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    overflow-x: auto;
+}
+
+#mixes_panel_container::-webkit-scrollbar {
+    display: none;
+}
+
+.mix_panel_container {
+    display: flex;
+    position: relative;
+    flex-shrink: 1;
+    border-radius: 5px;
+    height: 56px;
+    width: 362px;
+    background-color: #23232D;
+}
+
+.mix_img_container {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-image: url(../assets/album_cover.png);
+    background-size: cover;
+    transition: 0.2s;
+}
+
+#mix_icon_play_container {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+}
+
+.mix_icon_play::before {
+    position: relative;
+    display: block;
+    color: #fff;
+}
+
+i#mix_icon_play_1,
+i#mix_icon_play_2,
+i#mix_icon_play_3,
+i#mix_icon_play_4,
+i#mix_icon_play_5,
+i#mix_icon_play_6,
+i#mix_icon_play_7,
+i#mix_icon_play_8,
+i#mix_icon_play_9,
+i#mix_icon_play_10,
+i#mix_icon_play_11,
+i#mix_icon_play_12 {
+    position: relative;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.mix_text {
+    display: flex;
+    padding: 5px;
+    padding-left: 15px;
+    flex-direction: column;
+}
+
+.mix_title {
+    color: #fff;
+}
+
+.mix_label {
+    color: #a2a2ad;
+    font-size: 13px;
+}
