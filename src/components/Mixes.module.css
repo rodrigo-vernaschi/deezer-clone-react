@@ -51,7 +51,7 @@ table#mixes_table {
     border-radius: 5px;
     height: 56px;
     width: 362px;
-    background-color: #23232D;
+    background-color: #23232d;
 }
 
 .mix_img_container {
@@ -59,7 +59,6 @@ table#mixes_table {
     width: 56px;
     height: 56px;
     border-radius: 5px;
-    background-image: url(../assets/album_cover.png);
     background-size: cover;
     transition: 0.2s;
 }
@@ -80,18 +79,7 @@ table#mixes_table {
     color: #fff;
 }
 
-i#mix_icon_play_1,
-i#mix_icon_play_2,
-i#mix_icon_play_3,
-i#mix_icon_play_4,
-i#mix_icon_play_5,
-i#mix_icon_play_6,
-i#mix_icon_play_7,
-i#mix_icon_play_8,
-i#mix_icon_play_9,
-i#mix_icon_play_10,
-i#mix_icon_play_11,
-i#mix_icon_play_12 {
+i.mix_icon_play {
     position: relative;
     font-size: 40px;
     margin: 0;
